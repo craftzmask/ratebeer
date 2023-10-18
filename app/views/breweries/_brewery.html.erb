@@ -1,12 +1,5 @@
 <div id="<%= dom_id brewery %>">
-  <p>
-    <strong>Name:</strong>
-    <%= link_to brewery.name, brewery %>
-  </p>
-
-  <p>
-    <strong>Year:</strong>
-    <%= brewery.year %>
-  </p>
-
+  <h2><%= @brewery.name %></h2>
+  <p>Established in: <%= @brewery.year %></p>
+  <p>Beers count: <%= @brewery.beers.count %></p>
 </div>
