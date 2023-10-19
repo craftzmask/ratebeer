@@ -3,11 +3,7 @@ class Beer < ApplicationRecord
   has_many :ratings
 
   def average_rating
-    total_scores = 0.0
-    ratings.each do |rating|
-      total_scores += rating.score
-    end
-
-    (total_scores / ratings.count)
+    # ratings is object model which contains average()
+    ratings.average(:score)
   end
 end
