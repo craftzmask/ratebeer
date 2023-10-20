@@ -8,6 +8,8 @@
     <% end %>
   </p>
 
+  <p>Brewery has <%= brewery.ratings.count %> ratings with an average of <%= brewery.average_rating %></p>
+
   <p>
     <%= link_to "List of all beers", beers_path %>
   </p>
